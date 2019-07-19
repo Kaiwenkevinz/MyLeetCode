@@ -35,5 +35,49 @@ You may assume that there are no duplicate edges in the input prerequisites.
 所以这题可以看成：给一个有向图，检查此图是否有环。
 如果无环，return true。有环就return false。
 
-使用拓扑排序
-### 解法
+检查一个有向图是否有环的算法步骤：
+1. 选一个入度为零的顶点
+2. 移除此顶点
+3. 移除与此顶点相连的边
+4. 重复2,3直到没有入度为零的顶点
+5. 如果图中还有顶点，则有环，反之无环
+
+### 代码
+```py
+import collections
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        
+        # init graph
+        G = {}
+        for i in range(numCourses):
+            G[i] = []
+        for course, prereq in prerequisites:
+            G[course].append(prereq)
+
+        # init order list 
+        # list: store the order of courses being processed
+        # length of order == numCourses means no cycle
+        result_order = []
+        
+        # init working queue
+        working_queue = collections.deque()
+        
+        # put courses without prereq into working_queue
+        for course, prereqs in G.items():
+            if len(prereqs) == 0:
+                working_queue.append(course)
+        
+        while working_queue:
+            working_course = working_queue.popleft()
+            result_order.append(working_course)
+            
+            for course, prereqs in G.items():
+                # remove vertice and its connecting edges
+                if working_course in prereqs:
+                    prereqs.remove(working_course)
+                    if len(prereqs) == 0:
+                        working_queue.append(course)
+                        
+        return len(result_order) == numCourses
+```
