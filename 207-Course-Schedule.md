@@ -42,6 +42,9 @@ You may assume that there are no duplicate edges in the input prerequisites.
 4. 重复2,3直到没有入度为零的顶点
 5. 如果图中还有顶点，则有环，反之无环
 
+### 关键词
+有向图，拓扑排序
+
 ### 代码
 ```py
 import collections
