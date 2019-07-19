@@ -34,6 +34,7 @@ You may assume that there are no duplicate edges in the input prerequisites.
 使用拓扑排序，[步骤](https://github.com/cofo-coding-camp/Kaiwenzhang/blob/master/207-Course-Schedule.md)
 
 ### 代码
+
 ```py
 import collections
 
@@ -69,4 +70,4 @@ class Solution:
             return []
         
         return result
-    ```
+
