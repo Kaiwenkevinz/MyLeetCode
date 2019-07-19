@@ -26,7 +26,7 @@ Output: 4
 
 
 ### 解法1-哈希表
-```
+```py
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         
