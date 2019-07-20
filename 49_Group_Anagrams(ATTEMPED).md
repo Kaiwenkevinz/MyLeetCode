@@ -72,7 +72,7 @@ class Solution:
 ### 解法一改进版 (依旧超时）
 记录下每个单词是否被比较过，移除了dic.remove(), dic.copy()
 
-时间复杂度减小到O(nk)，但还是超时。。
+时间复杂度减小到O(n^2*k)，但还是超时。。
 
 ```py
 class Solution:
@@ -122,3 +122,27 @@ class Solution:
 ```
 
 ### 解法二
+
+用排序将单词映射至哈希表，最后返回哈希表的值。
+
+例如["ate","eat","tea"]中每个单词排序后都是aet，它们都会被map到哈希表中key为aet的位置。
+
+时间复杂度：排序要O(k*log(k))， for loop要O(n) => O(n * klog(k))
+空间复杂度：O(n*k)
+
+```py
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        
+        dic = {}
+        
+        for word in strs:
+            word_sorted = tuple(sorted(word))
+            if word_sorted in dic:
+                dic[word_sorted].append(word)
+            else:
+                dic[word_sorted] = []
+                dic[word_sorted].append(word)
+        
+        return list(dic.values())
+```
