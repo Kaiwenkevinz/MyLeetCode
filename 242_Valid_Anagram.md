@@ -1,6 +1,27 @@
+### 题目
+https://leetcode.com/problems/valid-anagram/
+```
+Given two strings s and t , write a function to determine if t is an anagram of s.
+```
+
+```
+Example 1:
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+```
+Example 2:
+Input: s = "rat", t = "car"
+Output: false
+```
+
+### 代码
+```py
 class Solution:
+    # O(n)
     def isAnagram(self, s: str, t: str) -> bool:
-        
+             
         if len(s) > len(t):
             return False
         
@@ -19,3 +40,4 @@ class Solution:
                 return False
         
         return True
+```
