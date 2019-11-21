@@ -12,8 +12,8 @@ def natural_keys(text):
     '''
     return [ atoi(c) for c in re.split(r'(\d+)', text) ]
 
-
-filenames = os.listdir("./")
+folder = "Questions"
+filenames = os.listdir("./" + folder)
 filenames.sort(key=natural_keys)
 
 with open('README.md','w') as f:
@@ -25,6 +25,6 @@ with open('README.md','w') as f:
         if name[0].isdigit():
             number = name[:name.index(".")] 
             title = name[name.index(".")+1: -3].replace("-", " ").replace("_", " ").title()
-            link = "https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/" + name
+            link = "https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/" + folder + "/" + name
             content = "|  " + number + " | [" + title + "](" + link + ") |\n"
             f.write(content)
