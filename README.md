@@ -23,4 +23,3 @@
 |  257 | [Binary Tree Paths](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/257.binary-tree-paths.py) |
 |  279 | [Perfect Squares](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/279.perfect-squares.py) |
 |  326 | [Power Of Three](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/326.power-of-three.py) |
-|  99999 | [Test](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/99999.test.py) |
