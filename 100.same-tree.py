@@ -1,10 +1,25 @@
-#
-# @lc app=leetcode id=100 lang=python3
-#
-# [100] Same Tree
-#
+### 题目
+```
+Given two binary trees, write a function to check if they are the same or not.
 
-# @lc code=start
+Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
+
+Example 1:
+
+Input:     1         1
+          / \       / \
+         2   3     2   3
+
+        [1,2,3],   [1,2,3]
+
+Output: true
+```
+
+### 关键词
+- DFS
+
+### 解法1
+```py
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
@@ -32,6 +47,4 @@ class Solution:
 
         self.dfs(root.left, current + str(root.val), res)
         self.dfs(root.right, current + str(root.val), res)
-
-# @lc code=end
-
+ ```
