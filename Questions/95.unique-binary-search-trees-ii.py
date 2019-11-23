@@ -15,5 +15,28 @@
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
         
+        if n == 0:
+            return []
+        
+        return self.generateTreesHelper(1, n)
+    
+    def generateTreesHelper(self, start: int, end: int) -> List[TreeNode]:
+
+        if start > end:
+            return [None]
+        
+        res = []
+        for cur_root in range(start, end + 1):
+            left = self.generateTreesHelper(start, cur_root - 1)
+            right = self.generateTreesHelper(cur_root + 1, end)
+            for l in left:
+                for r in right:
+                    root = TreeNode(cur_root)
+                    root.left = l
+                    root.right = r
+                    res.append(root)
+
+        return res
+
 # @lc code=end
 

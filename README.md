@@ -10,6 +10,7 @@
 |  94 | [Binary Tree Inorder Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/94.binary-tree-inorder-traversal.py) |
 |  95 | [Unique Binary Search Trees Ii](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/95.unique-binary-search-trees-ii.py) |
 |  96 | [Unique Binary Search Trees](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/96.unique-binary-search-trees.py) |
+|  98 | [Validate Binary Search Tree](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/98.validate-binary-search-tree.py) |
 |  100 | [Same Tree](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/100.same-tree.md) |
 |  101 | [Symmetric Tree](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/101.symmetric-tree.md) |
 |  102 | [Binary Tree Level Order Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/102.binary-tree-level-order-traversal.md) |
