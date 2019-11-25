@@ -16,6 +16,8 @@
 |  102 | [Binary Tree Level Order Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/102.binary-tree-level-order-traversal.md) |
 |  103 | [Binary Tree Zigzag Level Order Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/103.binary-tree-zigzag-level-order-traversal.md) |
 |  104 | [Maximum Depth Of Binary Tree](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/104.maximum-depth-of-binary-tree.md) |
+|  105 | [Construct Binary Tree From Preorder And Inorder Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) |
+|  106 | [Construct Binary Tree From Inorder And Postorder Traversal](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) |
 |  107 | [Binary Tree Level Order Traversal Ii](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/107.binary-tree-level-order-traversal-ii.py) |
 |  136 | [Single Number](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/136.Single_Number.md) |
 |  155 | [Min Stack](https://github.com/Kaiwenkevinz/MyLeetCode/blob/master/Questions/155.min-stack.md) |
