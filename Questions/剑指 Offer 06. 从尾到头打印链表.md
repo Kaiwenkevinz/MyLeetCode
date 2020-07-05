@@ -13,6 +13,8 @@
 ### 思路
 递归， O(n)
 
+要注意当链表很长时，调用栈可能会溢出，
+
 ```py
 # Definition for singly-linked list.
 # class ListNode:
